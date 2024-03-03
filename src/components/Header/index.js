@@ -76,7 +76,7 @@ const Header = props => (
             >
               {close => (
                 <ModalContainer>
-                  <ModalDesc>Are You sure</ModalDesc>
+                  <ModalDesc>Are You sure, you want to logout?</ModalDesc>
                   <ButtonsContainer>
                     <CloseButton
                       type="button"
@@ -103,7 +103,7 @@ const Header = props => (
             >
               {close => (
                 <ModalContainer>
-                  <ModalDesc>Are You sure</ModalDesc>
+                  <ModalDesc>Are You sure, you want to logout?</ModalDesc>
                   <ButtonsContainer>
                     <CloseButton
                       type="button"

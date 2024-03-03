@@ -33,7 +33,8 @@ const FailureView = props => {
               Oops! Something Went Wrong
             </FailedHeading>
             <FailedNote noteColor={noteColor}>
-              We are having some trouble
+              We are having some trouble to complete your request <br /> Please
+              Try Again later.
             </FailedNote>
             <RetryButton type="button" onClick={onClickRetry}>
               Retry

@@ -25,8 +25,8 @@ const GameVideoCard = props => {
               <GamingThumbNailImage src={thumbnailUrl} alt="video thumbnail" />
               <GamingContentSection>
                 <GamingTitle color={textColor}>{title}</GamingTitle>
-                <GamingViewsAndDate>
-                  {viewCount} Watching worldwide
+                <GamingViewsAndDate color={textColor}>
+                  {viewCount} Watching Worldwide
                 </GamingViewsAndDate>
               </GamingContentSection>
             </GamingListItem>

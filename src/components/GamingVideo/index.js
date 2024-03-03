@@ -38,7 +38,7 @@ class GamingVideo extends Component {
   getVideos = async () => {
     this.setState({apiState: apiStatusConstant.inProgress})
     const jwtToken = Cookies.get('jwt_token')
-    const url = 'https://apis.ccbp.in/videos/gaming'
+    const url = `https://apis.ccbp.in/videos/gaming`
     const options = {
       headers: {
         Authorizations: `Bearer ${jwtToken}`,
@@ -65,9 +65,9 @@ class GamingVideo extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container" data-testid="loader">
+    <LoaderContainer data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-    </div>
+    </LoaderContainer>
   )
 
   renderVideoView = () => {

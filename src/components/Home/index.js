@@ -94,9 +94,9 @@ class Home extends Component {
   }
 
   renderLoadingView = () => (
-    <div className="loader-container" data-testid="loader">
+    <LoaderContainer data-testid="loader">
       <Loader type="ThreeDots" color="#ffffff" height="50" width="50" />
-    </div>
+    </LoaderContainer>
   )
 
   renderVideosView = () => {
@@ -130,7 +130,7 @@ class Home extends Component {
           const {isDarkTheme} = value
 
           const bgColor = isDarkTheme ? '#181818' : '#f9f9f9'
-          const textColor = isDarkTheme ? '#f9f9f9' : '#181818'
+          const textColor = isDarkTheme ? '#f9f9f9' : '#231f20'
           const display = bannerDisplay === 'flex' ? 'flex' : 'none'
 
           return (
